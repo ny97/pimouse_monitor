@@ -2,8 +2,11 @@
 <html lang="ja">
     <head>
         <meta charset="utf=8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Pimouse Monitor</title>
-
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">Pimouse Monitor</a>
@@ -24,18 +27,18 @@
                         <tr><td>sum_forward</td><td id="sum_forward"></td></tr>
                     </table>
                 </div>
-                <div class="col-md-4" id="camera">
+                <div class="col-md-4">
                     <h2>Camera</h2>
                     <object id="camstream" style="width:300px;height:240px" ></object>
                 </div>
-                <div class="col-md-4" id="motor">
+                <div class="col-md-4">
                     <h2>Motors
                         <button type="button" class="btn btn-danger" id="motor_on">ON</button>
                         <button type="button" class="btn btn-primary" id="motor_off">OFF</button>
+                    </h2>
                         <div id="touchmotion" class="well" style="width:300px;height:300px;cursor:pointer">
                             <span id="vel_fw">0</span>[mm/s]&nbsp;<span id="vel_rot">0</span>[deg/s]
                         </div>
-                    </h2>
                 </div>
             </div>
         </div>
@@ -43,8 +46,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
         <script src="js/bootstrap.min.js"></script>
-        <script src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
-        <script src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+        <script src="https://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+        <script src="https://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
         <script src="main.js"></script>
     </body>
 </html>

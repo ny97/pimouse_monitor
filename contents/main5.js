@@ -75,6 +75,6 @@ $('#touchmotion').on('click', function(e){
     vel_rot = rect.width/2 - x;
     $('#vel_fw').html(parseInt(vel_fw));
     $('vel_rot').html(parseInt(vel_rot));
-}
+});
 
 setInterval(pubMotorValues,100);
